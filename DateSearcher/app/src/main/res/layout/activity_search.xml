@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/search_linear"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1280"
+    android:background="#f5f5f5">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+    </Space>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:weightSum="720">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="57"/>
+
+        <EditText
+            android:inputType="text"
+            android:id="@+id/search_top_editText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="550"
+            android:textColor="#000000"
+            android:backgroundTint="#000000"
+            android:singleLine="true"/>
+
+        <ImageButton
+            android:onClick="onClick_search_search_btn_Listener"
+            android:id="@+id/search_search_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="64"
+            android:src="@drawable/search_search_icon"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+    </Space>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1020"
+        android:weightSum="720">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/search_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="23"
+        android:background="#555555">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="43"
+        android:weightSum="720"
+        android:background="#555555">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="57"/>
+
+        <EditText
+            android:id="@+id/search_bottom_editText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="614"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:inputType="text"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:background="#555555">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="46"
+        android:weightSum="720"
+        android:background="#555555">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="365"/>
+
+        <ImageButton
+            android:id="@+id/search_toinfo_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="125"
+            android:src="@drawable/search_toinfo_icon"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"/>
+
+        <ImageButton
+            android:id="@+id/search_toamp_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="186"
+            android:src="@drawable/search_tomap_icon"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="16"
+        android:background="#555555">
+    </LinearLayout>
+
+
+
+</LinearLayout>

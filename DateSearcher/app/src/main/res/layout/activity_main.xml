@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/main_linear"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1280"
+    android:orientation="vertical"
+    android:background="@drawable/main_background">
+    
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="52">
+
+    </Space>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="37"
+        android:weightSum="720">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="264"
+            android:src="@drawable/name_text"
+            android:scaleType="fitCenter"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="249"
+        >
+
+    </Space>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="99"
+        android:weightSum="720">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="64"/>
+
+        <EditText
+            android:id="@+id/main_editText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="506"
+            android:singleLine="true"
+            android:hint="검색어를 입력하세요"
+            android:textColorHint="@color/shadow"
+            android:textColor="#000000"
+            android:backgroundTint="#000000"
+            android:inputType="text"/>
+
+        <ImageButton
+            android:onClick="onClick_main_search_btn_Listner"
+            android:id="@+id/main_search_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="97"
+            android:src="@drawable/search_icon"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="17"
+        android:weightSum="720">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:weightSum="720">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="64"/>
+
+        <ImageButton
+            android:onClick="onClick_main_clear_Listener"
+            android:id="@+id/main_listclear_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="101"
+            android:src="@drawable/listclear_icon"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="602"
+        android:weightSum="720">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="64"/>
+
+        <ListView
+            android:id="@+id/main_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="603">
+
+        </ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="129"
+        android:weightSum="720">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="570"/>
+
+        <ImageButton
+            android:id="@+id/main_toMap_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="99"
+            android:src="@drawable/map_icon"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+</LinearLayout>
